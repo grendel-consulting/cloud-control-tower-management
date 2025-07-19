@@ -19,7 +19,7 @@ Report security bugs by emailing us at
 
 We will acknowledge your email within 72 hours, and will send a more detailed
 response within a further 72 hours indicating the next steps in handling your
-report. After the initial reply to your report, we will endeavor to keep you
+report. After the initial reply to your report, we will endeavour to keep you
 informed of the progress towards a fix and full announcement, and may ask for
 additional information or guidance.
 
@@ -43,7 +43,7 @@ Disclosures should be sent to [security@grendel-consulting.com][security], inclu
 - The impact of the vulnerability
 - Any references or further reading that may be appropriate
 
-Our investigation process is straight-forward. We will work to:
+Our investigation process is straightforward. We will work to:
 
 - Confirm the problem and determine the affected versions.
 - Audit code to find any potential similar problems.
@@ -75,7 +75,7 @@ as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 ### Recommendations
 
 Prospective contributors are encouraged to familiarise themselves, if not already,
-with existing techniques and good practise.
+with existing techniques and good practice.
 
 ## Providing Feedback
 
