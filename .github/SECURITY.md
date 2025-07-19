@@ -52,7 +52,7 @@ Our investigation process is straight-forward. We will work to:
 ## Security Checklist and Recommendations
 
 We have baked some baseline security checks into our toolchains, to be reflected
-in this section together with things to watch out for.
+in this section, together with things to watch out for.
 
 ### Our Security Toolchain
 

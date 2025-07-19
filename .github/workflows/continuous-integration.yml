@@ -35,14 +35,13 @@ jobs:
           persist-credentials: false
           show-progress: false
 
-      - name: Setup Teraform
+      - name: Setup Terraform
         uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3.1.2
         with:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Prettify
         run: terraform fmt -check
-        continue-on-error: true
 
       - name: Initialise
         run: terraform init
@@ -224,7 +223,7 @@ jobs:
             })
             const output = `#### Terraform Cloud Plan Output
                Plan: ${PLANNED_TO_ADD} to add, ${PLANNED_TO_CHANGE} to change, ${PLANNED_TO_DESTROY} to destroy.
-               [Terraform Cloud Plan]("$PLAN_URL")
+               [Terraform Cloud Plan]($PLAN_URL)
                `
             // 3. If we have a comment, update it, otherwise create a new one
             if (botComment) {

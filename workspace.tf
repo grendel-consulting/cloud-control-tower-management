@@ -1,6 +1,6 @@
 data "tfe_workspace" "target" {
   name         = var.tfc_workspace_name
-  organization = var.tfc_organisation_name
+  organization = var.tfc_organization_name
 }
 
 resource "tfe_variable" "enable_aws_provider_auth" {
@@ -20,5 +20,5 @@ resource "tfe_variable" "tfc_aws_role_arn" {
   value    = aws_iam_role.tfc_ct_role.arn
   category = "env"
 
-  description = "Specific the AWS Role ARN that runs will use to authenticate."
+  description = "Specify the AWS Role ARN that runs will use to authenticate."
 }

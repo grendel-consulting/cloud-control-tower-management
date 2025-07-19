@@ -10,9 +10,9 @@ variable "tfc_hostname" {
   default     = "app.terraform.io"
 }
 
-variable "tfc_organisation_name" {
+variable "tfc_organization_name" {
   type        = string
-  description = "Name of your Terraform Cloud organisation"
+  description = "Name of your Terraform Cloud organization"
   default     = "grendel-consulting"
 }
 
@@ -31,5 +31,6 @@ variable "tfc_workspace_name" {
 variable "tfc_token" {
   type        = string
   description = "Authentication token for TFC (or TFE)"
+  nullable    = false
   sensitive   = true
 }

@@ -26,8 +26,8 @@ resource "aws_iam_role" "tfc_ct_role" {
          "${var.tfc_hostname}:aud": "${one(data.aws_iam_openid_connect_provider.tfc_provider.client_id_list)}"
        },
        "StringLike": {
-         "${var.tfc_hostname}:sub": "organization:${var.tfc_organisation_name}:project:${var.tfc_project_name}:workspace:${var.tfc_workspace_name}:run_phase:*"
-         
+         "${var.tfc_hostname}:sub": "organization:${var.tfc_organization_name}:project:${var.tfc_project_name}:workspace:${var.tfc_workspace_name}:run_phase:*"
+
        }
      }
    }
