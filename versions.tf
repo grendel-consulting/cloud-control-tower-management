@@ -25,7 +25,7 @@ terraform {
 
     tfe = {
       source  = "hashicorp/tfe"
-      version = "0.76.2"
+      version = "0.81.0"
     }
 
     tls = {
